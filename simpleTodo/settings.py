@@ -128,3 +128,4 @@ JWT_EXPIRY_DURATION = int(os.getenv('JWT_EXPIRY_DURATION', 10))
 JWT_CACHE = redis.Redis()
 JWT_SECRET = os.getenv('JWT_SECRET', 'hail hydra!')
 LOGGED_IN_USERS = 'logged:in:users'
+STATIC_ROOT = '/static/'
