@@ -1,0 +1,8 @@
+{% extends 'admin/change_form.html' %}
+
+{% block submit_buttons_bottom %}
+    {{ block.super }}
+    <div class="submit-row">
+        <input type="submit" style="color: #212529; background-color: #ffc107; border-color: #ffc107;" value="Force Logout" name="_force_todo_logout">
+    </div>
+{% endblock %}
