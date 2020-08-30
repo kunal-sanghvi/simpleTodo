@@ -125,7 +125,12 @@ USE_TZ = True
 STATIC_URL = '/static/'
 PAGE_SIZE = 20
 JWT_EXPIRY_DURATION = int(os.getenv('JWT_EXPIRY_DURATION', 10))
-JWT_CACHE = redis.Redis()
+
+REDIS_HOST = os.getenv('REDIS_HOST', 'localhost')
+REDIS_PORT = int(os.getenv('REDIS_PORT', 16434))
+REDIS_PASS = os.getenv('REDIS_PASS', '')
+print('connecting to {}:{}'.format(REDIS_HOST, REDIS_PORT))
+JWT_CACHE = redis.Redis(host=REDIS_HOST, port=REDIS_PORT, password=REDIS_PASS)
 JWT_SECRET = os.getenv('JWT_SECRET', 'hail hydra!')
 LOGGED_IN_USERS = 'logged:in:users'
 STATIC_ROOT = '/static/'
