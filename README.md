@@ -133,4 +133,4 @@
 
 > Open edit user data page for any user whom you want to force logout, you'd see a ``FORCE LOGOUT`` button at the bottom of the screen
 
-![Admin console list user view](https://github.com/kunal-sanghvi/simpleTodo/blob/master/img/UserForceLogout.png?raw=true)
+![Admin force logout view](https://github.com/kunal-sanghvi/simpleTodo/blob/master/img/UserForceLogout.png?raw=true)
